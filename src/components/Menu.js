@@ -3,6 +3,7 @@ import { MenuContext } from "../context/MenuContext";
 
 function Menu() {
   const { state, toogleMenu } = useContext(MenuContext);
+  const yo = "yo";
   const toMenu = () => {
     toogleMenu();
   };
