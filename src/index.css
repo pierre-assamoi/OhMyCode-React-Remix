@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .menuUp {
+        @apply fixed flex-col h-screen bg-pink-800 text-white items-center 
+        justify-center w-screen origin-top scale-y-0 top-0
+    }
+    .menuDown {
+        @apply fixed flex-col h-screen bg-pink-800 text-white items-center 
+        justify-center w-screen transition-all ease-linear origin-top scale-y-100 top-0 duration-200
+    }
+
+    .navUp {
+        @apply fixed top-0 flex mx-auto bg-white text-slate-900 w-screen justify-around scale-y-0 origin-top
+    }
+
+    .navDown {
+        @apply fixed top-0 flex mx-auto bg-white text-slate-900 w-screen justify-around scale-y-100 origin-top
+    }
+}
